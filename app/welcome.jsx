@@ -23,7 +23,7 @@ const WelcomePage = () => {
         <View style={{gap: 20}}>
             <Text style={styles.title}>Twingle!</Text>
             <Text style={styles.punchline}>
-              Where every thought finds a home and every image tells a story.
+              Let your every moment speak somthing about you.
             </Text>
         </View>
 
