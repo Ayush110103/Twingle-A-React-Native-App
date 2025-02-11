@@ -5,7 +5,9 @@ module.exports = {
           'module-resolver',
           {
               alias: {
-                  '@env': './config/env.js'
+                  
+                '@env': './config/env.js',
+                
               }
           }
       ]
