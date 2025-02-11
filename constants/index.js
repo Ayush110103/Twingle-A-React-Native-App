@@ -1,2 +1,4 @@
-export const supabaseUrl = 'https://edqearjpjhjmotamzddk.supabase.co';
-export const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVkcWVhcmpwamhqbW90YW16ZGRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzkyNzY0NDMsImV4cCI6MjA1NDg1MjQ0M30.-Y1zrAZoJAbeHVmTIrMudu85WAFQbqM24EYK63U3LUU';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '@env';
+
+export const supabaseUrl = SUPABASE_URL;
+export const supabaseAnonKey = SUPABASE_ANON_KEY;
