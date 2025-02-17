@@ -80,7 +80,12 @@ const Login = () => {
           </Text>
 
           {/* button */}
-          <Button title="Login" loading={loading} onPress={onSubmit} />
+          <Button 
+            title="Log in" 
+            loading={loading} 
+            onPress={onSubmit} 
+            buttonStyle={{ backgroundColor: theme.colors.primaryDark }} 
+/>
         </View>
 
         <View style={styles.footer}>

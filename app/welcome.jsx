@@ -10,7 +10,6 @@ import { useRouter } from 'expo-router';
 import Button from '../components/Button';
 
 const WelcomePage = () => {
-
     const router = useRouter();
   return (
     <ScreenWrapper bg={'white'}>
@@ -30,7 +29,7 @@ const WelcomePage = () => {
         <View style={styles.footer}>
           <Button 
             title="Getting Started" 
-            buttonStyle={{marginHorizontal: wp(3)}} 
+            buttonStyle={{marginHorizontal: wp(3), backgroundColor: theme.colors.primaryDark}} 
             onPress={()=> router.push('signUp')}
           />
           <View style={styles.bottomTextContainer}>
@@ -41,7 +40,6 @@ const WelcomePage = () => {
                 <Text style={[styles.loginText, {color: theme.colors.primaryDark, fontWeight: theme.fonts.semibold}]}>Login</Text>
               </Pressable>
           </View>
-          
         </View>
       </View>
     </ScreenWrapper>
@@ -62,10 +60,14 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   title: {
-    color: theme.colors.text,
-    fontSize: hp(4),
+    color: theme.colors.primaryDark,
+    fontSize: hp(5), // increased size for extra emphasis
     textAlign: 'center',
-    fontWeight: theme.fonts.extraBold
+    fontWeight: theme.fonts.extraBold,
+    letterSpacing: 1,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)', // subtle shadow
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
   },
   punchline: {
     textAlign: 'center',
@@ -77,7 +79,6 @@ const styles = StyleSheet.create({
     gap: 30,
     width: '100%',
   },
- 
   bottomTextContainer:{
     flexDirection: 'row',
     justifyContent: 'center',

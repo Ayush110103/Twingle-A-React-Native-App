@@ -94,7 +94,12 @@ const SignUp = () => {
           />
 
           {/* button */}
-          <Button title="Sign up" loading={loading} onPress={onSubmit} />
+          <Button 
+            title="Sign up" 
+            loading={loading} 
+            onPress={onSubmit} 
+            buttonStyle={{ backgroundColor: theme.colors.primaryDark }} 
+/>
         </View>
 
         <View style={styles.footer}>
